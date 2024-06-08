@@ -13,7 +13,6 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local opts= {}
-vim.api.nvim_set_option("clipboard","unnamed")
 vim.opt.clipboard = "unnamedplus"
 require("lazy").setup("plugins")
 vim.wo.number = true
