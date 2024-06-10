@@ -1,3 +1,4 @@
+
 return {
 	{
 		"hrsh7th/cmp-nvim-lsp",
@@ -9,7 +10,6 @@ return {
 			"rafamadriz/friendly-snippets",
 		},
 	},
-
 	{
 		"hrsh7th/nvim-cmp",
 		config = function()
@@ -18,7 +18,6 @@ return {
 			cmp.setup({
 				snippet = {
 					expand = function(args)
-						vim.fn["vsnip#anonymous"](args.body)
 						require("luasnip").lsp_expand(args.body)
 					end,
 				},
@@ -43,3 +42,4 @@ return {
 		end,
 	},
 }
+
