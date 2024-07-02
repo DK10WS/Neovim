@@ -1,3 +1,3 @@
-return{
-'tmsvg/pear-tree'
+return {
+	"tmsvg/pear-tree",
 }
