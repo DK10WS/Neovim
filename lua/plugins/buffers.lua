@@ -25,7 +25,7 @@ return {
 				tab_size = 18,
 				diagnostics = "nvim_lsp",
 				diagnostics_update_in_insert = false,
-				offsets = { { filetype = "NvimTree", text = "File Explorer", text_align = "left" } },
+				offsets = { { filetype = "NvimTree", text = "", text_align = "left" } },
 				show_buffer_icons = true,
 				show_buffer_close_icons = true,
 				show_close_icon = true,
@@ -33,7 +33,7 @@ return {
 				persist_buffer_sort = true, -- whether or not custom sorted buffers should persist
 				separator_style = "slant",
 				enforce_regular_tabs = false,
-				always_show_bufferline = true,
+				always_show_bufferline = false,
 				sort_by = "id",
 			},
 		})

@@ -30,7 +30,7 @@ return {
       },
     })
 
-    vim.cmd("colorscheme default")
+    vim.cmd("colorscheme kanagawa-dragon")
   end,
 }
 
