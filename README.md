@@ -13,11 +13,11 @@ Once This is completed run ```nvim``` and you would see all the plugins load in.
 
 Run this on the nvim command shell after all plugins have loaded
 
-```MasonInstall stylua prettier erb_lint black shfmt```
+```MasonInstall stylua prettier erb_lint black shfmt python-lsp-server lua-language-server isort clangd rust-analyzer stylua```
 
 For python venv integration into the lsp update the value of include-system-site-packages to "true" which is located at 
 
-```cd ~/.local/share/nvim/mason/packages/python-lsp-server ```
+```nvim ~/.local/share/nvim/mason/packages/python-lsp-server/venv/pyvenv.cfg ```
 
 
 After this You are all set. 
