@@ -1,6 +1,8 @@
 {
     "diagnostics.globals": [
-        "vim"
+        "vim",
+        "andweeb",
+        "presence"
     ],
     "diagnostics.disable": [
         "different-requires"
