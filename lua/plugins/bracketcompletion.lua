@@ -1,3 +1,7 @@
 return {
-	"tmsvg/pear-tree",
+  {
+    "windwp/nvim-autopairs",
+    event = "InsertEnter",
+    config = true,
+  },
 }
