@@ -15,6 +15,10 @@ Run this on the nvim command shell after all plugins have loaded
 
 ```MasonInstall stylua prettier erb_lint black shfmt```
 
+For python venv integration into the lsp update the value of include-system-site-packages to "true" which is located at 
+
+```cd ~/.local/share/nvim/mason/packages/python-lsp-server ```
+
 
 After this You are all set. 
 
