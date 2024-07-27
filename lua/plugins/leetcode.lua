@@ -12,7 +12,7 @@ return
         "nvim-tree/nvim-web-devicons",
     },
     opts = {
-            lang = "py",
+            lang = "cpp",
           arg = "leetcode.nvim",
               home = vim.fn.stdpath("data") .. "/leetcode",
     },
