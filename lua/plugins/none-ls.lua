@@ -10,6 +10,8 @@ return {
 				null_ls.builtins.formatting.black,
 				null_ls.builtins.formatting.shfmt,
 				null_ls.builtins.formatting.isort,
+        null_ls.builtins.diagnostics.golangci_lint,
+        null_ls.builtins.formatting.goimports,
 			},
 		})
 
