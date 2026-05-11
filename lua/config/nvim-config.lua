@@ -9,6 +9,7 @@ vim.opt.autowrite = false -- do not auto-save
 vim.opt.undofile = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
+vim.opt.clipboard = "unnamedplus"
 
 -- tree-sitter
 vim.bo.syntax = "on"
