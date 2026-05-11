@@ -23,20 +23,25 @@ return {
 			})
 
 			-- Python
-			vim.lsp.config("pylsp", {
-				capabilities = capabilities,
+			vim.lsp.config("ruff", {
+				cmd = { "ruff", "server" },
 
-				settings = {
-					pylsp = {
-						plugins = {
-							pyflakes = { enabled = false },
-							pycodestyle = { enabled = false },
-							pylint = { enabled = false },
-							mccabe = { enabled = false },
-						},
+				filetypes = { "python" },
+
+				root_markers = {
+					"pyproject.toml",
+					"ruff.toml",
+					".ruff.toml",
+					".git",
+				},
+
+				init_options = {
+					settings = {
+						args = {},
 					},
 				},
 			})
+
 
 			-- Rust
 			vim.lsp.config("rust_analyzer", {
@@ -114,7 +119,7 @@ return {
 
 			-- Enable servers
 			vim.lsp.enable("lua_ls")
-			vim.lsp.enable("pylsp")
+			vim.lsp.enable("ruff")
 			vim.lsp.enable("rust_analyzer")
 			vim.lsp.enable("clangd")
 			vim.lsp.enable("gopls")

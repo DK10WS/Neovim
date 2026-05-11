@@ -10,6 +10,7 @@ vim.opt.undofile = true
 vim.opt.tabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.clipboard = "unnamedplus"
+vim.opt.termguicolors = true
 
 -- tree-sitter
 vim.bo.syntax = "on"
