@@ -31,13 +31,15 @@ vim.api.nvim_set_keymap("n", "<Leader>x", "<cmd>bd<CR>", { noremap = true, silen
 --nvimLsp
 vim.keymap.set("n", "gd", vim.lsp.buf.definition, { desc = "Go to Definition" })
 ----------------------
+
 vim.keymap.set("n", "K", function()
-  vim.lsp.buf.hover({
-    border = "rounded",
-    max_width = 80,
-    max_height = 20,
-  })
+	vim.lsp.buf.hover({
+		border = "rounded",
+		max_width = 80,
+		max_height = 20,
+	})
 end, { desc = "LSP Hover" })
+
 ---------------------------------
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})

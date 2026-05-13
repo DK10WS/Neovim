@@ -17,12 +17,6 @@ vim.bo.syntax = "on"
 vim.bo.autoindent = true
 vim.bo.smartindent = true
 
-vim.api.nvim_create_autocmd("FileType", {
-	callback = function()
-		pcall(vim.treesitter.start)
-	end,
-})
-
 --UI
 
 vim.opt.fillchars:append({
